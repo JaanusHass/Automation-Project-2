@@ -1,4 +1,6 @@
+
 class IssueModal {
+    
     constructor() {
         this.submitButton = 'button[type="submit"]';
         this.issueModal = '[data-testid="modal:issue-create"]';
@@ -80,6 +82,8 @@ class IssueModal {
         cy.reload();
         cy.contains(issueTitle).should('not.exist');
     }
+
+    
 
     validateIssueVisibilityState(issueTitle, isVisible = true) {
         cy.get(this.issueDetailModal).should('not.exist');
