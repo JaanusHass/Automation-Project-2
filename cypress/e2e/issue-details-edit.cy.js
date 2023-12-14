@@ -5,6 +5,8 @@ describe('Issue details editing', () => {
       cy.visit(url + '/board');
       cy.contains('This is an issue of type: Task.').click();
     });
+
+    
   });
 
   it('Should update type, status, assignees, reporter, priority successfully', () => {
