@@ -66,6 +66,6 @@ describe('Issue comments creating, editing and deleting', () => {
 
         getIssueDetailsModal()
             .find('[data-testid="issue-comment"]')
-            .should('not.exist');
+            .should('not.contain', comment);
     });
 });
